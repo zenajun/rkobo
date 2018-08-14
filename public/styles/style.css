@@ -142,20 +142,25 @@ img {
   width: 100%; }
 
 .wrapper {
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto; }
+  @media (min-width: 1141px) {
+    .wrapper {
+      padding: 0; } }
 
-@media (min-width: 569px) {
+@media (min-width: 881px) {
   header {
     margin-top: 0;
     padding-top: 1px;
     background: url("../../public/images/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; } }
+    background-position: center;
+    height: 490px; } }
 
-@media (min-width: 569px) {
-  div.hero {
+@media (min-width: 881px) {
+  picture {
     display: none; } }
 
 h1 {
@@ -163,11 +168,15 @@ h1 {
   text-align: center;
   font-weight: 400;
   margin: 3rem auto; }
+  @media (min-width: 881px) {
+    h1 {
+      text-align: left;
+      font-size: 4rem; } }
 
 .banner {
   background: #e4f2f2;
   padding: 35px; }
-  @media (min-width: 569px) {
+  @media (min-width: 881px) {
     .banner {
       background: none;
       padding: 0; } }
@@ -178,11 +187,27 @@ h1 {
   font-style: italic;
   font-size: 2rem;
   font-weight: 400; }
+  @media (min-width: 881px) {
+    .banner h2 {
+      text-align: left; } }
 
 .banner p {
   font-family: 'Trebuchet MS', Arial, sans-serif;
   font-size: 1.2rem;
   text-align: center; }
+
+section.promo {
+  display: none; }
+  @media (min-width: 569px) {
+    section.promo {
+      display: block;
+      margin: 70px auto 135px; } }
+
+.promo p {
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto; }
 
 section.main-content {
   margin-bottom: 25px; }
@@ -195,7 +220,9 @@ section.main-content {
   margin-bottom: 40px; }
 
 .main-content ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 .main-content li {
   font-size: 2rem;
@@ -203,6 +230,18 @@ section.main-content {
   padding-left: 75px;
   margin-bottom: 45px;
   position: relative; }
+  @media (min-width: 569px) {
+    .main-content li {
+      font-size: 2.5rem; } }
+  @media (min-width: 881px) {
+    .main-content li {
+      float: left; } }
+  @media (min-width: 1141px) {
+    .main-content li {
+      margin-right: 55px; } }
+
+.main-content li:last-of-type {
+  margin-right: 0; }
 
 .main-content li::before {
   content: '';
@@ -218,7 +257,17 @@ section.main-content {
     .main-content li::before {
       background: url(../../public/images/bullet.jpg) no-repeat;
       width: 56px;
-      height: 56px; } }
+      height: 56px;
+      top: 30px; } }
+
+span.extra-content {
+  display: none; }
+  @media (min-width: 569px) {
+    span.extra-content {
+      display: block;
+      font-size: 1.8rem;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      margin-top: 15px; } }
 
 a.start-now {
   background: #00a6d0;
@@ -231,6 +280,14 @@ a.start-now {
   display: block;
   -webkit-transition: 0.2s;
   transition: 0.2s; }
+  @media (min-width: 569px) {
+    a.start-now {
+      display: inline-block;
+      padding: 15px 50px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
 
 a.start-now:hover {
   background: #189692; }
