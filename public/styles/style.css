@@ -134,10 +134,103 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 62.5%; }
 
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+img {
+  display: block;
+  width: 100%; }
+
 .wrapper {
-  width: 80%;
-  max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto; }
 
+@media (min-width: 569px) {
+  header {
+    margin-top: 0;
+    padding-top: 1px;
+    background: url("../../public/images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; } }
+
+@media (min-width: 569px) {
+  div.hero {
+    display: none; } }
+
 h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 3rem auto; }
+
+.banner {
+  background: #e4f2f2;
+  padding: 35px; }
+  @media (min-width: 569px) {
+    .banner {
+      background: none;
+      padding: 0; } }
+
+.banner h2 {
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 400; }
+
+.banner p {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1.2rem;
   text-align: center; }
+
+section.main-content {
+  margin-bottom: 25px; }
+
+.main-content h2 {
+  font-size: 3.4rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 40px; }
+
+.main-content ul {
+  list-style: none; }
+
+.main-content li {
+  font-size: 2rem;
+  position: relative;
+  padding-left: 75px;
+  margin-bottom: 45px;
+  position: relative; }
+
+.main-content li::before {
+  content: '';
+  background: url(../../public/images/bullet-m.jpg) no-repeat;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+  @media (min-width: 569px) {
+    .main-content li::before {
+      background: url(../../public/images/bullet.jpg) no-repeat;
+      width: 56px;
+      height: 56px; } }
+
+a.start-now {
+  background: #00a6d0;
+  color: #fff;
+  padding: 20px;
+  font-size: 2.2rem;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+
+a.start-now:hover {
+  background: #189692; }
