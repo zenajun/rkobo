@@ -262,6 +262,9 @@ section.main-content {
   margin-right: 0; }
 
 .main-content li::before {
+  content: ''; }
+
+li.active::before {
   content: '';
   background: url(../../public/images/bullet-m.jpg) no-repeat;
   width: 48px;
@@ -272,7 +275,7 @@ section.main-content {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
   @media (min-width: 569px) {
-    .main-content li::before {
+    li.active::before {
       background: url(../../public/images/bullet.jpg) no-repeat;
       width: 56px;
       height: 56px;

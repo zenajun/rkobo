@@ -150,8 +150,11 @@ section.main-content {
 .main-content li:last-of-type {
 	margin-right: 0;
 }
-
 .main-content li::before {
+	content: '';
+}
+
+li.active::before {
 	 content: '';
 	 background: url(../../public/images/bullet-m.jpg) no-repeat;
 	 width: 48px;
