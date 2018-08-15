@@ -24,19 +24,27 @@ img {
 
 header {
 	@media (min-width: 881px) {
-		margin-top: 0;
-		padding-top: 1px;
 		background: url("../../public/images/hero.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 		height: 490px;
+		position: relative;
 	}
 }
 
 picture {
 	@media (min-width: 881px) {
 		display: none;
+	}
+}
+
+div.headings {
+	@media (min-width: 881px) {
+
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }
 
@@ -48,6 +56,8 @@ h1 {
 	@media (min-width: 881px) {
 		text-align: left;
 		font-size: 4rem;
+		margin-top: 0;
+		margin-bottom: 20px;
 	}
 }
 
@@ -68,6 +78,8 @@ h1 {
 	font-weight: 400;
 	@media (min-width: 881px) {
 		text-align: left;
+		font-size: 2.5rem;
+		margin-bottom: 25px;
 	}
 }
 
@@ -75,6 +87,10 @@ h1 {
 	font-family: 'Trebuchet MS', Arial, sans-serif;
 	font-size: 1.2rem;
 	text-align: center;
+	@media (min-width: 881px) {
+		text-align: left;
+		font-size: 1.4rem;
+	}
 }
 
 section.promo {
@@ -101,6 +117,10 @@ section.main-content {
 	text-align: center;
 	margin-top: 45px;
 	margin-bottom: 40px;
+	@media (min-width: 881px) {
+		font-size: 4rem;
+		margin-top: 0;
+	}
 }
 
 .main-content ul {
@@ -170,9 +190,10 @@ a.start-now {
 	@media (min-width: 569px) {
 		display: inline-block;
 		padding: 15px 50px;
-		position: absolute;
+		position: relative;
 		left: 50%;
 		transform: translateX(-50%);
+		font-size: 1.8rem;
 
 		
 	}
